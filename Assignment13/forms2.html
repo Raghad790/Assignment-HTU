@@ -83,7 +83,54 @@
         required
         minlength="8"
       />
-      <br /><br>
+      <br /><br />
+      <label for="gender">Gender</label>
+      <br /><br />
+      <input type="radio" name="gender" id="gender" value="1" checked />Male
+      <br />
+      <input type="radio" name="gender" id="gender" value="2" />Female
+      <hr />
+      <br />
+      <label for="skills">Skills</label>
+      <br />
+      <input
+        type="checkbox"
+        name="skills"
+        id="skills"
+        value="skill1"
+        checked
+      />skill1
+      <br />
+      <input type="checkbox" name="skills" id="skills" value="skill2" />skill2
+      <br />
+
+      <input
+        type="checkbox"
+        name="skills"
+        id="skills"
+        value="skill3"
+        checked
+      />skill3
+      <br />
+
+      <input type="checkbox" name="skills" id="skills" value="skill4" />skill4
+      <br />
+      <hr />
+      <select name="country" id="country" multiple>
+        <option value="jo">Jordan</option>
+        <option value="uk">United kingdom</option>
+        <option value="us">United States</option>
+        <option value="le">Lebonon</option>
+      </select>
+      <hr />
+      <input type="text" list="country" id="country" />
+      <datalist>
+        <option value="jo">Jordan</option>
+        <option value="uk">United kingdom</option>
+        <option value="us">unites states</option>
+        <option value="le">Lebonon</option>
+      </datalist>
+      <br /><br />
       <input type="submit" value="Create User" />
     </form>
   </body>
