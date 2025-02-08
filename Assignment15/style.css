@@ -1,0 +1,14 @@
+#home {
+  background-image: url("on1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+#about {
+  background-image: url("on3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+}
