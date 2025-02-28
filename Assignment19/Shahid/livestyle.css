@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1b1c24;
+  color: #fff;
+  padding: 20px;
+}
+.parent-A {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flex-row {
+  display: flex;
+  gap: 5px;
+}
+.item1,
+.item2,
+.item3,
+.flex-row > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #75312a;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 150px;
+  min-height: 100px;
+}
+
+.item1 {
+  flex: 1;
+}
+.item2 {
+  flex: 2;
+}
+.item3 {
+  flex: 3;
+}
