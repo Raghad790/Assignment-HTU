@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link rel="stylesheet" href="youtubestyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="left-section">
+        <i class="fa-solid fa-sliders"></i>
+        <img src="youtubemedia/YouTube_Logo_2017.svg.webp" width="100px" />
+      </div>
+      <div class="mid-section">
+        <div class="search-box">
+          <input type="text" placeholder="Search" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <i class="fa-solid fa-microphone-lines"></i>
+      </div>
+      <div class="right-section">
+        <button class="create-btn"><span class="icon">+</span> Create</button>
+        <i class="fa-solid fa-bell"></i>
+        <img src="youtubemedia/profile9.jpg" width="100px" />
+      </div>
+    </header>
+    <div class="content-area">
+      <nav>
+        <div class="section-1">
+          <div class="row">
+            <i class="fa-solid fa-house"></i><a href="">Home</a>
+          </div>
+
+          <div class="row">
+            <i class="fa-solid fa-film"></i><a href=""> Shorts</a>
+          </div>
+
+          <div class="row">
+            <i class="fa-solid fa-photo-film"></i><a href=""> Subscription</a>
+          </div>
+        </div>
+        <hr />
+        <div class="section-2">
+          <h3>For You</h3>
+          <div class="row">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <a href=""> History</a>
+          </div>
+          <div class="row">
+            <i class="fa-solid fa-file-video"></i><a href=""> Playlists</a>
+          </div>
+          <div class="row">
+            <i class="fa-solid fa-play"></i><a href="">Your videos</a>
+          </div>
+          <div class="row">
+            <i class="fa-solid fa-clock"></i><a href=""> Watch Later</a>
+          </div>
+          <div class="row">
+            <i class="fa-regular fa-thumbs-up"></i><a href=""> Liked videos</a>
+          </div>
+        </div>
+        <hr />
+
+        <div class="section-3">
+          <h3>Subscriptions</h3>
+          <div class="row">
+            <img src="youtubemedia/channel1.jpg" /><a href=""
+              >AlJazeera Arabic</a
+            >
+          </div>
+          <div class="row">
+            <img src="youtubemedia/channel2.jpg" /><a href="">KBS World TV</a>
+          </div>
+          <div class="row">
+            <img src="youtubemedia/channel3.jpg" /><a href="">Roya News </a>
+          </div>
+          <div class="row">
+            <img src="youtubemedia/channel4.jpg" /> <a href="">AL HASHIM</a>
+          </div>
+          <div class="row">
+            <img src="youtubemedia/channel5.jpg" /> <a href="">AboFlah</a>
+          </div>
+          <div class="row">
+            <img src="youtubemedia/channel6.jpg" /> <a href="">Apple</a>
+          </div>
+          <div class="row">
+            <img src="youtubemedia/channel7.jpg" />
+            <a href="">Awakening Music </a>
+          </div>
+          <div class="row">
+            <img src="youtubemedia/channel8.jpg" />
+            <a href="">BarryTube </a>
+          </div>
+          <div class="row">
+            <img src="youtubemedia/channel9.jpg" />
+            <a href="">BanderitaX </a>
+          </div>
+          <div class="row">
+            <img src="youtubemedia/channel10.jpg" />
+            <a href="">BLACKPINK </a>
+          </div>
+        </div>
+        <hr />
+        <div class="section-4">
+          <h3>Explore</h3>
+          <div class="row">
+            <i class="fa-solid fa-arrow-trend-up"></i><a href="">Trending</a>
+          </div>
+          <div class="row">
+            <i class="fa-solid fa-music"></i><a href="">Music</a>
+          </div>
+          <div class="row">
+            <i class="fa-solid fa-gamepad"></i><a href="">Gaming</a>
+          </div>
+          <div class="row">
+            <i class="fa-solid fa-trophy"></i> <a href="">Sport</a>
+          </div>
+        </div>
+        <hr />
+        <div class="section-4">
+          <div class="row">
+            <i class="fa-solid fa-gear"></i><a href="">Settings</a>
+          </div>
+          <div class="row">
+            <i class="fa-solid fa-flag"></i><a href="">Report history</a>
+          </div>
+          <div class="row">
+            <i class="fa-solid fa-question"></i><a href="">Help</a>
+          </div>
+          <div class="row">
+            <i class="fa-solid fa-comment"></i><a href="">Send Feedback</a>
+          </div>
+        </div>
+      </nav>
+      <div class="parent">
+        <div class="videos-container">
+          <div class="category-bar">
+            <button class="category">All</button>
+            <button class="category">Music</button>
+            <button class="category">Mixes</button>
+            <button class="category">Umm Kulthum</button>
+            <button class="category">Arabic Music</button>
+            <button class="category">Programming</button>
+            <button class="category">Podcasts</button>
+            <button class="category">History</button>
+            <button class="category">Television series</button>
+            <button class="category">Psychology</button>
+            <button class="category">Live</button>
+            <button class="category">Dua</button>
+            <button class="category">Dawah</button>
+            <button class="category">Classical Music</button>
+            <button class="category">Lectures</button>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/english1.avif" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/profile1.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  English Podcast: Understand English But Cant Speak?
+                </a>
+                <a href="" class="video-creator">
+                  <p>LEP - Learn English Podcast</p>
+                </a>
+                <span>10M • 5 Months ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/maher.avif" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/profile2.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  Maher Zain - Muhammad (Pbuh) Waheshna
+                </a>
+                <a href="" class="video-creator"><p>Awakening Music</p></a>
+                <span>13M • 3 years ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/tedxnew.avif" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/ted profile.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  How Long It Takes To Change Your Life?
+                </a>
+                <a href="" class="video-creator"> <p>TEDx Talks</p> </a>
+                <span>10M • 3 Month ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/pod1.jpg" width="250px" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/profilepod1.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  The Stress Expert: Your Brain is Like a Phone Battery!
+                </a>
+                <a href="" class="video-creator"><p>Jay Shetty Podcas</p> </a>
+                <span>10M • 3 Month ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/pod2.jpg" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/profilepod2.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  Wendy Suzuki: The brain-changing benefits of exercise
+                </a>
+                <a href="" class="video-creator"> <p>TED</p> </a>
+                <span>10M • 3 Month ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/enpo1.avif" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/profilepod2.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  English Podcast: Understand English But Cant Speak?
+                </a>
+                <a href="" class="video-creator"><p>podcustry</p> </a>
+                <span>10M • 3 Month ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/thumbnail1.avif" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/profile9.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  English Podcast: Understand English But Cant Speak?
+                </a>
+                <a href="" class="video-creator"> <p>TED</p></a>
+                <span>10M • 3 Month ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/james.avif" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/ted profile.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  Elon Musk: The future we're building
+                </a>
+                <a href="" class="video-creator"> <p>TEDx Talks</p> </a>
+                <span>10M • 3 Month ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/thinkkkkk.avif" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/profile4.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title"> Think Again-Adam Grant </a>
+                <a href="" class="video-creator"><p>Dupamicaffeine</p> </a>
+                <span>6.7M • 10 Months ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/english1.avif" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/profile1.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  English Podcast: Understand English But Cant Speak?
+                </a>
+                <a href="" class="video-creator">
+                  LEP - Learn English Podcast
+                </a>
+                <span>10M • 5 Months ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/maher.avif" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/profile2.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  Maher Zain - Muhammad (Pbuh) Waheshna
+                </a>
+                <a href="" class="video-creator">Awakening Music </a>
+                <span>13M • 3 years ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/tedxnew.avif" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/ted profile.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  How Long It Takes To Change Your Life?
+                </a>
+                <a href="" class="video-creator"> TEDx Talks </a>
+                <span>10M • 3 Month ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/thumbnail1.avif" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/profile9.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  English Podcast: Understand English But Cant Speak?
+                </a>
+                <a href="" class="video-creator"> TED </a>
+                <span>10M • 3 Month ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/james.avif" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/ted profile.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  Elon Musk: The future we're building
+                </a>
+                <a href="" class="video-creator"> TEDx Talks </a>
+                <span>10M • 3 Month ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/pod2.jpg" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/profilepod2.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  Wendy Suzuki: The brain-changing benefits of exercise
+                </a>
+                <a href="" class="video-creator"> TED </a>
+                <span>10M • 3 Month ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/enpo1.avif" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/profilepod2.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  English Podcast: Understand English But Cant Speak?
+                </a>
+                <a href="" class="video-creator"> podcustry </a>
+                <span>10M • 3 Month ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/pod2.jpg" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/profilepod2.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  Wendy Suzuki: The brain-changing benefits of exercise
+                </a>
+                <a href="" class="video-creator"> TED </a>
+                <span>10M • 3 Month ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="video">
+            <div class="thumbnail">
+              <img src="youtubemedia/enpo1.avif" />
+            </div>
+            <div class="video-details">
+              <div class="creator-img">
+                <img src="youtubemedia/profilepod2.jpg" />
+              </div>
+              <div class="title">
+                <a href="" class="video-title">
+                  English Podcast: Understand English But Cant Speak?
+                </a>
+                <a href="" class="video-creator"> podcustry </a>
+                <span>10M • 3 Month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
