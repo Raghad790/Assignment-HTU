@@ -1,0 +1,9 @@
+.first {
+  background: #0f6cf7;
+  color: #fff;
+  padding: 30px;
+}
+.row {
+  gap: 20px;
+  padding: 30px;
+}
