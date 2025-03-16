@@ -17,8 +17,7 @@ body {
 .dropdown-menu .dropdown-item:hover {
   background-color: #333;
 }
-.nav-link:focus,
-.nav-link:active {
+.nav-link:focus {
   outline: 2px solid #007bff;
   border-radius: 5px;
 }
