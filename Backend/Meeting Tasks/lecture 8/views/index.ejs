@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <% if(locals.numberOfLetters) {%>
+    <h1>There are <%= numberOfLetters %> letters in your name</h1>
+    <% } %> <% if(locals.fullName) {%>
+    <h1>Your Name is <%= fullName %></h1>
+    <%}%>
+    <form action="/submit" method="post">
+      <label for="fname">First Name:</label>
+      <input type="text" name="fname" id="fname" required />
+      <label for="lname">Last Name:</label>
+      <input type="text" name="lname" required />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
