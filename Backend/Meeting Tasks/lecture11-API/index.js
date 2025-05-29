@@ -1,7 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
 
-
 const app = express();
 const port = 3000;
 let colors = [
@@ -14,14 +13,14 @@ let colors = [
   { id: 7, color: "orange", value: "#ffa500" },
   { id: 8, color: "green", value: "#0f0" },
 ];
-
+let lastId = 8;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 //Api doing get(restful API))
 app.get("/colors", (req, res) => {
   res.json(colors);
 });
-
+//Get=>Return Values
 app.get("/random", (req, res) => {
   const randomColor = Math.floor(Math.random() * colors.length);
   res.json(colors[randomColor]);
@@ -34,17 +33,19 @@ app.get("/colors/:id", (req, res) => {
   const colorObj = colors.find((color) => color.id === id);
   res.json(colorObj);
 });
-
+//filtering==URL filtering(query)
+//filter=>array
 app.get("/filter", (req, res) => {
   const colorQ = req.query.color;
   const listOfFilteredColors = colors.filter((color) => color.color === colorQ);
   res.json(listOfFilteredColors);
 });
-
+//post=>create values
 //client cant create id ..in postman we didnt create id
 app.post("/colors", (req, res) => {
+  lastId++;
   const newColor = {
-    id: colors.length + 1,
+    id: lastId,
     color: req.body.color,
     value: req.body.value,
   };
@@ -90,23 +91,18 @@ app.delete("/colors/:id", (req, res) => {
     res.sendStatus(200);
   } else {
     res.status(404).json({ error: `Color id ${id} not found` });
+    //status =>chain method
   }
 });
 
 app.delete("/all", (req, res) => {
-   colors=[];
-      res.sendStatus(200);
-   
-  });
-  
-
+  colors = [];
+  res.sendStatus(200);
+});
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
-
-
-
 
 //CRUD Operations =>create==post
 // update=put,patch
