@@ -32,14 +32,6 @@ app.use(express.urlencoded({ extended: true }));
 //Routes=>Api
 app.use("/api/auth", authRoutes);
 
-// Health check
-//to check if the server is running(server health check)
-app.get("/health", (req, res) => res.json({ status: "OK" }));
-
-// Error handling
-app.use(notFound);
-app.use(errorHandler);
-
 app.use(cookieParser());
 app.use(
   session({
@@ -56,6 +48,14 @@ app.use(
     },
   })
 );
+
+// Health check
+//to check if the server is running(server health check)
+app.get("/health", (req, res) => res.json({ status: "OK" }));
+
+// Error handling
+app.use(notFound);
+app.use(errorHandler);
 
 //to use my app in the server.js file
 export default app;
