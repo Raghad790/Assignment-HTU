@@ -1,0 +1,20 @@
+a {
+  font-size: 30px;
+}
+
+.title {
+  color: red;
+}
+
+.table {
+  display: table;
+  border-spacing: 2px;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: 0;
+  border: 1px solid black;
+  width: 100%;
+}
+td{
+  text-align: center;
+}

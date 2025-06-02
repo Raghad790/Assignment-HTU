@@ -1,5 +1,6 @@
-function Button(){
-    const handleClick=()=>console.log('Click')
-return <button onClick={handleClick}>Click Me</button>;
+function Buttons() {
+  // const handleClick = () => console.log("Click");
+  const handleCkick2 = (e) => (e.target.textContent = "Good Job");
+  return <button onClick={(event) => handleCkick2(event)}>Click Me</button>;
 }
-export default  Button;
+export default Buttons;
